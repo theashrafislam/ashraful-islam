@@ -3,7 +3,7 @@ import HomePage from './Components/HomePage/HomePage';
 
 const Page = () => {
   return (
-    <div>
+    <div className="h-screen">
       <HomePage />
     </div>
   );

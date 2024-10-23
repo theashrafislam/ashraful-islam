@@ -16,16 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${lato.variable} antialiased flex`}
-      >
+      <body className={`${lato.variable} antialiased flex`}>
         <aside>
           <Navbar />
         </aside>
         <main className="w-full">
           {children}
         </main>
-
       </body>
     </html>
   );

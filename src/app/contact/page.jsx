@@ -17,7 +17,7 @@ const ContactPage = () => {
             <div className='w-full max-w-6xl mx-auto'>
                 <div className='text-center mb-10'>
                     <h3 className='text-2xl text-orange-500 font-semibold mb-2'>Have You Any Questions?</h3>
-                    <p className='text-lg'>I'M AT YOUR SERVICE</p>
+                    <p className='text-lg'>I&apos;M AT YOUR SERVICE</p>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-6 text-center mb-10'>
@@ -56,7 +56,7 @@ const ContactPage = () => {
 
                 <div className='text-center mb-10'>
                     <h3 className='text-2xl font-semibold text-orange-500'>SEND ME AN EMAIL</h3>
-                    <p className='text-lg text-gray-400 mt-2'>I'M VERY RESPONSIVE TO MESSAGES</p>
+                    <p className='text-lg text-gray-400 mt-2'>I&apos;M VERY RESPONSIVE TO MESSAGES</p>
                 </div>
 
                 <div className='bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg max-w-4xl mx-auto'>

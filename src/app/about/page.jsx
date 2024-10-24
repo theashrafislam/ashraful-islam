@@ -31,7 +31,7 @@ const AboutPage = () => {
 
                 {/* Right Section: Specialization and Skills */}
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">I'm Specialized in</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">I&apos;m Specialized in</h2>
 
                     {/* Front-End Section */}
                     <div className="mb-8 bg-gray-800 p-4 rounded-md">

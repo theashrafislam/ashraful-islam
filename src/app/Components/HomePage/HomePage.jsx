@@ -3,7 +3,7 @@ import Image from "next/image";
 const HomePage = () => {
     return (
         <div className="bg-gray-900 text-white p-6 md:p-10 min-h-screen flex flex-col justify-center">
-            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-10">
                 {/* Text Section */}
                 <div className="flex flex-col gap-4 md:gap-6 justify-center items-start text-start md:text-left md:w-3/5">
                     <h1 className="text-2xl md:text-4xl font-bold">

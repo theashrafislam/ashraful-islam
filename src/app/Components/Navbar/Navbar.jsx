@@ -17,7 +17,7 @@ const Navbar = () => {
     const handleLinkClick = () => setDrawerOpen(false);
 
     return (
-        <div>
+        <div className="fixed z-10 lg:mr-8">
             {/* Menu Button for Mobile and Tablet */}
             <div className="lg:hidden fixed top-4 right-4 z-30">
                 <button
@@ -30,12 +30,11 @@ const Navbar = () => {
 
             {/* Drawer Navigation */}
             <div
-                className={`fixed top-0 left-0 h-full lg:h-screen w-56 bg-[#222222] text-white z-20 transform ${
-                    drawerOpen ? "translate-x-0" : "-translate-x-full"
-                } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:justify-center lg:items-center`}
+                className={`fixed top-0 left-0 h-full lg:h-screen w-56 bg-[#222222] text-white z-20 transform ${drawerOpen ? "translate-x-0" : "-translate-x-full"
+                    } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:justify-center lg:items-center`}
             >
                 <div className="h-full flex flex-col justify-center items-center">
-                    <div className="flex flex-col gap-4 items-start lg:items-center">
+                    <div className="flex flex-col gap-4 items-start lg:items-start">
                         <Link
                             href="/"
                             className={`flex gap-2 items-center ${isActive("/") ? "text-orange-500" : "hover:text-orange-300"}`}
@@ -74,9 +73,8 @@ const Navbar = () => {
 
             {/* Backdrop for Mobile and Tablet when Drawer is Open */}
             <div
-                className={`fixed inset-0 bg-black opacity-50 z-10 ${
-                    drawerOpen ? "block" : "hidden"
-                } lg:hidden`}
+                className={`fixed inset-0 bg-black opacity-50 z-10 ${drawerOpen ? "block" : "hidden"
+                    } lg:hidden`}
                 onClick={toggleDrawer}
             />
         </div>

@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${lato.variable} antialiased flex`}>
-        <aside>
+        <aside className="lg:w-2/12">
           <Navbar />
         </aside>
-        <main className="w-full">
+        <main  className="w-full">
           {children}
         </main>
       </body>

@@ -1,7 +1,43 @@
-import React from 'react';
+"use client"
+import toast from 'react-hot-toast';
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
+
 const ContactPage = () => {
+
+    const handleFormData = async (e) => {
+        e.preventDefault();
+        const { name, subject, email, messages } = e.target.elements;
+        const formData = {
+            name: name.value,
+            subject: subject.value,
+            email: email.value,
+            messages: messages.value
+        }
+        const response = await fetch('/api/sendEmail', {
+            method: "POST",
+            headers: {
+                'content-type': "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
+        if(response.status === 200){
+            e.target.reset();
+            toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+        else{
+            toast.error('⚠️ Oops! Something went wrong. Please try again.')
+        }
+    }
+
     return (
         <div className='min-h-screen bg-gray-900 flex flex-col items-center justify-center text-white p-6 md:p-10'>
             <div className='mb-6 flex justify-start w-full'>
@@ -22,32 +58,32 @@ const ContactPage = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-6 text-center mb-10'>
                     <div className='flex flex-col items-center'>
-                        <FaPhoneAlt className='text-orange-500 text-3xl mb-4' />
-                        <h4 className='text-lg font-semibold'>Call Us On</h4>
+                        <a href='tel:+8801639568198'><FaPhoneAlt className='text-orange-500 text-3xl mb-1' /></a>
+                        <a href='tel:+8801639568198'><h4 className='text-lg font-semibold'>Call Us On</h4></a>
                         <a href='tel:+8801639568198' className='text-sm text-gray-400'>
                             +880 1639-568198
                         </a>
                     </div>
 
                     <div className='flex flex-col items-center'>
-                        <FaEnvelope className='text-orange-500 text-3xl mb-4' />
-                        <h4 className='text-lg font-semibold'>Email</h4>
+                        <a href='mailto:theashrafislam@gmail.com'><FaEnvelope className='text-orange-500 text-3xl mb-1' /></a>
+                        <a href='mailto:theashrafislam@gmail.com'><h4 className='text-lg font-semibold'>Email</h4></a>
                         <a href='mailto:theashrafislam@gmail.com' className='text-sm text-gray-400'>
                             theashrafislam@gmail.com
                         </a>
                     </div>
 
                     <div className='flex flex-col items-center'>
-                        <FaLinkedin className='text-orange-500 text-3xl mb-4' />
-                        <h4 className='text-lg font-semibold'>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/theashrafislam"><FaLinkedin className='text-orange-500 text-3xl mb-1' /></a>
+                        <a href="https://www.linkedin.com/in/theashrafislam"><h4 className='text-lg font-semibold'>LinkedIn</h4></a>
                         <a href='https://www.linkedin.com/in/theashrafislam' target='_blank' rel='noopener noreferrer' className='text-sm text-gray-400'>
                             linkedin.com/in/theashrafislam
                         </a>
                     </div>
 
                     <div className='flex flex-col items-center'>
-                        <FaGithub className='text-orange-500 text-3xl mb-4' />
-                        <h4 className='text-lg font-semibold'>GitHub</h4>
+                        <a href="https://github.com/theashrafislam"><FaGithub className='text-orange-500 text-3xl mb-1' /></a>
+                        <a href="https://github.com/theashrafislam"><h4 className='text-lg font-semibold'>GitHub</h4></a>
                         <a href='https://github.com/theashrafislam' target='_blank' rel='noopener noreferrer' className='text-sm text-gray-400'>
                             github.com/theashrafislam
                         </a>
@@ -60,20 +96,24 @@ const ContactPage = () => {
                 </div>
 
                 <div className='bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg max-w-4xl mx-auto'>
-                    <form className='grid grid-cols-1 gap-6'>
+                    <form onSubmit={handleFormData} className='grid grid-cols-1 gap-6'>
                         {/* Name Field */}
                         <div className=''>
                             <input
                                 type='text'
                                 placeholder='Name'
+                                required
+                                name="name"
                                 className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
                             />
                         </div>
                         {/* Email Field */}
                         <div className=''>
                             <input
+                                required
                                 type='email'
                                 placeholder='Email'
+                                name="email"
                                 className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
                             />
                         </div>
@@ -81,14 +121,18 @@ const ContactPage = () => {
                         <div className=''>
                             <input
                                 type='text'
+                                required
                                 placeholder='Subject'
+                                name="subject"
                                 className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
                             />
                         </div>
                         {/* Message Field */}
                         <div className=''>
                             <textarea
-                                placeholder='Message'
+                                required
+                                placeholder='Messages'
+                                name="messages"
                                 className='w-full px-4 py-2 h-32 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
                             />
                         </div>

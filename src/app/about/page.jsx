@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb } from 'react-icons/si';
 import { BsGit } from 'react-icons/bs';
+import TypeWriter from '../Components/TypeWriter/TypeWriter';
 
 const AboutPage = () => {
     return (
@@ -31,7 +32,7 @@ const AboutPage = () => {
 
                 {/* Right Section: Specialization and Skills */}
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">I&apos;m Specialized in</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6">I&apos;m Specialized in <span className="text-orange-500" ><TypeWriter development={'development'} /></span></h2>
 
                     {/* Front-End Section */}
                     <div className="mb-8 bg-gray-800 p-4 rounded-md">

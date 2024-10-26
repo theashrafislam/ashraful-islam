@@ -1,16 +1,15 @@
 "use client"
 import Typewriter from 'typewriter-effect';
 
-const TypeWriter = () => {
-
+const TypeWriter = ({development}) => {
     return (
         <Typewriter
             options={{
                 strings: [
-                    "MERN Stack Developer",
-                    "React JS Developer",
-                    "Next JS Developer",
-                    "Frontend Developer",
+                    `${development ? "MERN Stack Development" : "MERN Stack Developer"}`,
+                    `${development ? "React JS Development" : "React JS Developer"}`,
+                    `${development ? "Next JS Development" : "Next JS Developer"}`,
+                    `${development ? "Frontend Development" : "Frontend Developer"}`,
                 ],
                 autoStart: true,
                 loop: true,

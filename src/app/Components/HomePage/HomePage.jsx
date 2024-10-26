@@ -18,9 +18,11 @@ const HomePage = () => {
                         Ashraful&apos;s deep passion and unwavering commitment to web development, accentuated by his in-depth understanding and expertise of technology,
                         has solidified his reputation in the industry.
                     </p>
-                    <button className="bg-orange-500 text-white text-lg px-6 py-3 rounded-full hover:bg-orange-600 transition mt-4">
-                        Download Resume
-                    </button>
+                    <a download href="/MERN_Stack_Developer_Resume_of_Ashraful_Islam.pdf">
+                        <button className="bg-orange-500 text-white text-lg px-6 py-3 rounded-full hover:bg-orange-600 transition mt-4">
+                            Download Resume
+                        </button>
+                    </a>
                 </div>
 
                 {/* Image Section */}

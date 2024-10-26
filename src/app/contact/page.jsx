@@ -23,15 +23,7 @@ const ContactPage = () => {
         });
         if(response.status === 200){
             e.target.reset();
-            toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.', {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
+            toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.',);
         }
         else{
             toast.error('⚠️ Oops! Something went wrong. Please try again.')

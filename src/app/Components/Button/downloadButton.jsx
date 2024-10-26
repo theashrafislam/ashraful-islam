@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver';
 
 const downloadButton = () => {
     const handleDownload = () => {
-        const fileUrl = '/MERN_Stack_Developer_Resume_of_Ashraful_Islam.pdf';
+        const fileUrl = '/Ashraful_Islam_Resume.pdf';
         saveAs(fileUrl, 'Ashraful_Islam_Resume.pdf');
     }
     return (

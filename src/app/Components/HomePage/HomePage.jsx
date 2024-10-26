@@ -1,6 +1,11 @@
 import Image from "next/image";
+import DownloadButton from "../Button/downloadButton";
+// import downloadButton from "../Button";
 
 const HomePage = () => {
+    // const handleDownload = () => {
+    //     console.log('Hello, I am woking')
+    // }
     return (
         <div className="bg-gray-900 text-white p-6 md:p-10 min-h-screen flex flex-col justify-center">
             <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-10">
@@ -18,11 +23,11 @@ const HomePage = () => {
                         Ashraful&apos;s deep passion and unwavering commitment to web development, accentuated by his in-depth understanding and expertise of technology,
                         has solidified his reputation in the industry.
                     </p>
-                    <a download href="/MERN_Stack_Developer_Resume_of_Ashraful_Islam.pdf">
-                        <button className="bg-orange-500 text-white text-lg px-6 py-3 rounded-full hover:bg-orange-600 transition mt-4">
-                            Download Resume
-                        </button>
-                    </a>
+                    {/* <button onClick={handleDownload} className="bg-orange-500 text-white text-lg px-6 py-3 rounded-full hover:bg-orange-600 transition mt-4">
+                        Download Resume
+                    </button> */}
+                    {/* <downloadButton /> */}
+                    <DownloadButton/>
                 </div>
 
                 {/* Image Section */}

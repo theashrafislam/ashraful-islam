@@ -21,11 +21,11 @@ const HomePage = () => {
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>
                     </h2> */}
                     <p className="text-base md:text-xl leading-relaxed text-gray-300">
-                        Ashraful Islam is a skilled full-stack developer known for developing robust and efficient applications.
-                        Specializing in front-end and back-end development, he is skilled in JavaScript and has a wide range of skills with extensive experience.
-                        Ashraful&apos;s deep passion and unwavering commitment to web development, accentuated by his in-depth understanding and expertise of technology,
-                        has solidified his reputation in the industry.
+                        <strong>Ashraful Islam</strong> is a passionate <strong>web developer</strong> dedicated to harnessing the power of persistence and creativity. Despite facing challenges as a student in school, I never let that deter my ambitions. I proudly completed my diploma in <strong>Electrical Engineering</strong>, but my true passion lies in <strong>web development</strong>, which I now embrace as my career.
+                        <br className="mb-4"/>
+                        <strong>Coding</strong> brings me immense joy and fulfillment. It allows me to express my creativity while solving complex problems and building dynamic applications. As a <strong>MERN stack developer</strong>, I specialize in modern technologies such as <strong>React</strong> and <strong>Next.js</strong>. Through my projects, I strive to create <strong>user-friendly experiences</strong> that make a significant impact in the tech community.
                     </p>
+                    <p className="text-base md:text-xl leading-relaxed text-gray-300"></p>
                     <DownloadButton />
                 </div>
 

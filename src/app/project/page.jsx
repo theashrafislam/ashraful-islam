@@ -1,6 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
+export const metadata = {
+    title: "Projects by Ashraful Islam | Web Developer",
+    description: "Explore the projects developed by Ashraful Islam, showcasing skills in web development with technologies like React, Node.js, and MongoDB.",
+};
+
 const projects = [
     {
         title: "MediZone",
@@ -33,6 +38,8 @@ const projects = [
         serverRepo: "https://github.com/theashrafislam/studyHub-connect-server-side"
     }
 ];
+
+
 
 const ProjectsPage = () => {
     return (

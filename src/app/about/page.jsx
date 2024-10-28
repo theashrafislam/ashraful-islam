@@ -97,7 +97,7 @@ const AboutPage = () => {
                             {[
                                 { icon: <BsGit className="text-red-500" />, skill: "Git" },
                                 { icon: <SiFirebase className="text-yellow-600" />, skill: "Firebase" },
-                                { icon: <Image src="/images/nextauth.png" height={20} width={20} />, skill: "NextAuth.js" },
+                                { icon: <Image src="/images/nextauth.png" height={20} width={20} alt={"ashraful-islam"}/>, skill: "NextAuth.js" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>

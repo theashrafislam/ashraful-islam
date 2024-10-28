@@ -120,9 +120,9 @@ const AboutPage = () => {
 
                 <p className="py-3 text-gray-700 text-base md:text-lg leading-relaxed">Overcoming various challenges as a student, Ashraful realized that traditional academics did not define his potential. Instead, he discovered a genuine interest in <strong>coding</strong>, where creativity and technical skills converge to bring ideas to life. He specializes in the <strong>MERN stack</strong> and has a deep understanding of technologies like <strong>React</strong> and <strong>Next.js</strong>, which enable him to build modern, responsive, and dynamic <strong>web applications</strong>.</p>
 
-                <p className="pb-3 text-gray-700 text-base md:text-lg leading-relaxed">For Ashraful, <strong>web development</strong> is much more than writing code—it's about creating meaningful experiences for users and continuously improving to stay ahead in the fast-paced tech landscape. He enjoys experimenting with new tools and frameworks, allowing him to constantly evolve his skills and deliver high-quality solutions.</p>
+                <p className="pb-3 text-gray-700 text-base md:text-lg leading-relaxed">For Ashraful, <strong>web development</strong> is much more than writing code—it&#39;s about creating meaningful experiences for users and continuously improving to stay ahead in the fast-paced tech landscape. He enjoys experimenting with new tools and frameworks, allowing him to constantly evolve his skills and deliver high-quality solutions.</p>
 
-                <p className="pb-3 text-gray-700 text-base md:text-lg leading-relaxed">Driven by a desire to learn and grow, Ashraful's journey has been marked by self-improvement, perseverance, and an enthusiasm for embracing new challenges. Through various projects, he's refined his technical expertise and developed a mindset that values <strong>innovation</strong> and <strong>continuous learning</strong>.</p>
+                <p className="pb-3 text-gray-700 text-base md:text-lg leading-relaxed">Driven by a desire to learn and grow, Ashraful&#39;s journey has been marked by self-improvement, perseverance, and an enthusiasm for embracing new challenges. Through various projects, he&#39;s refined his technical expertise and developed a mindset that values <strong>innovation</strong> and <strong>continuous learning</strong>.</p>
 
 
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">As Ashraful Islam, he is committed to using his skills to make a positive impact through <strong>web development</strong>. Explore his <a href="portfolio.html">portfolio</a>, get to know his work, and see how his journey from <strong>Electrical Engineering</strong> to <strong>MERN stack development</strong> has shaped the developer he is today. Let’s connect and collaborate to bring ideas to life through <strong>technology</strong>.</p>
@@ -149,7 +149,7 @@ const AboutPage = () => {
 
                 <p className="pb-3 text-gray-700 text-base md:text-lg leading-relaxed">Ashraful also finds inspiration in <strong>traveling</strong> and <strong>nature photography</strong>, which add a creative touch to his development work. These hobbies provide him with fresh perspectives and unique ideas that often find their way into his projects, enriching the user experiences he builds.</p>
 
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">For Ashraful, <strong>web development</strong> is a lifelong passion, where <strong>learning</strong> and <strong>innovation</strong> go hand in hand. His journey reflects a continuous commitment to growth, always pushing the boundaries of what's possible with <strong>technology</strong>.</p>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed">For Ashraful, <strong>web development</strong> is a lifelong passion, where <strong>learning</strong> and <strong>innovation</strong> go hand in hand. His journey reflects a continuous commitment to growth, always pushing the boundaries of what&#39;s possible with <strong>technology</strong>.</p>
             </div>
 
             {/* Education Section */}

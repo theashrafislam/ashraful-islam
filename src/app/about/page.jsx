@@ -12,8 +12,8 @@ const AboutPage = () => {
                 About Me
                 {/* Custom Underline */}
                 <span className="absolute left-0 bottom-0 transform translate-y-2">
-                    <span className="block w-12 h-1 bg-orange-500"></span> {/* Thick Line */}
-                    <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span> {/* Thin Line */}
+                    <span className="block w-12 h-1 bg-orange-500"></span>
+                    <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span>
                 </span>
             </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -92,6 +92,7 @@ const AboutPage = () => {
                             {[
                                 { icon: <BsGit className="text-red-500" />, skill: "Git" },
                                 { icon: <SiFirebase className="text-yellow-600" />, skill: "Firebase" },
+                                { icon: <Image src="/images/nextauth.png" height={20} width={20}/>, skill: "NextAuth.js" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>
@@ -109,8 +110,8 @@ const AboutPage = () => {
                     About Me
                     {/* Custom Underline */}
                     <span className="absolute left-0 bottom-0 transform translate-y-2">
-                        <span className="block w-12 h-1 bg-orange-500"></span> {/* Thick Line */}
-                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span> {/* Thin Line */}
+                        <span className="block w-12 h-1 bg-orange-500"></span>
+                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span>
                     </span>
                 </h1>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
@@ -137,13 +138,13 @@ const AboutPage = () => {
                     Interests and Hobbies
                     {/* Custom Underline */}
                     <span className="absolute left-0 bottom-0 transform translate-y-2">
-                        <span className="block w-12 h-1 bg-orange-500"></span> {/* Thick Line */}
-                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span> {/* Thin Line */}
+                        <span className="block w-12 h-1 bg-orange-500"></span>
+                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span>
                     </span>
                 </h1>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 </p>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">Ashraful Islam is passionate about <strong>web development</strong>, enjoying <strong>coding</strong> as both a profession and a hobby. He loves exploring new <strong>programming languages</strong>, <strong>frameworks</strong>, and <strong>tools</strong>, always eager to expand his skills.</p>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed"><h3 className="inline">Ashraful Islam is passionate about <strong>web development</strong>, enjoying <strong>coding</strong> as both a profession and a hobby.</h3> He loves exploring new <strong>programming languages</strong>, <strong>frameworks</strong>, and <strong>tools</strong>, always eager to expand his skills.</p>
 
                 <p className="py-3 text-gray-700 text-base md:text-lg leading-relaxed">Outside of coding, Ashraful enjoys <strong>reading tech blogs</strong>, staying updated on <strong>technology trends</strong>, and engaging in <strong>online communities</strong> for knowledge sharing. His enthusiasm for continuous learning drives him to keep up with the latest in the fast-evolving <strong>software development</strong> world.</p>
 
@@ -154,14 +155,13 @@ const AboutPage = () => {
 
             {/* Education Section */}
             <div className="mt-8 bg-white text-gray-900 p-4 md:p-8 rounded-md">
-                {/* <h2 className="text-3xl md:text-4xl font-bold mb-2">Education</h2> */}
-                {/* <div className="h-1 w-40 bg-gradient-to-r from-black to-lime-400 mb-4"></div> */}
+
                 <h1 className='text-4xl font-bold mb-6 relative inline-block'>
                     Education
                     {/* Custom Underline */}
                     <span className="absolute left-0 bottom-0 transform translate-y-2">
-                        <span className="block w-12 h-1 bg-orange-500"></span> {/* Thick Line */}
-                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span> {/* Thin Line */}
+                        <span className="block w-12 h-1 bg-orange-500"></span>
+                        <span className="block w-8 h-0.5 bg-orange-500 mt-1"></span>
                     </span>
                 </h1>
                 <div className="flex flex-col lg:flex-row justify-between items-center">

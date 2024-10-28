@@ -5,6 +5,11 @@ import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb } from 'react-icons/s
 import { BsGit } from 'react-icons/bs';
 import TypeWriter from '../Components/TypeWriter/TypeWriter';
 
+export const metadata = {
+    title: 'About Ashraful Islam | Web Developer & MERN Stack Specialist',
+    description: 'Explore the journey of Ashraful Islam, a passionate web developer specializing in the MERN stack. From an Electrical Engineering background to mastering front-end and back-end technologies like React, Next.js, and MongoDB, Ashraful Islam is dedicated to creating meaningful web experiences.',
+};
+
 const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-6 md:px-10">
@@ -92,7 +97,7 @@ const AboutPage = () => {
                             {[
                                 { icon: <BsGit className="text-red-500" />, skill: "Git" },
                                 { icon: <SiFirebase className="text-yellow-600" />, skill: "Firebase" },
-                                { icon: <Image src="/images/nextauth.png" height={20} width={20}/>, skill: "NextAuth.js" },
+                                { icon: <Image src="/images/nextauth.png" height={20} width={20} />, skill: "NextAuth.js" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>

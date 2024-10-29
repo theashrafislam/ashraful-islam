@@ -138,7 +138,7 @@ const ContactPage = () => {
                                 />
                             </div>
                             {/* Submit Button */}
-                            <div className='text-center'>
+                            <div className='text-start md:text-center'>
                                 <button
                                     type='submit'
                                     className='bg-orange-500 text-white text-lg px-6 py-3 rounded-lg hover:bg-orange-600 transition'>

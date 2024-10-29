@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import toast from 'react-hot-toast';
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import LiveChatButton from '../Components/LiveChat/LiveChatButton';
 
 
 const ContactPage = () => {
@@ -39,7 +40,7 @@ const ContactPage = () => {
                 <meta name="keywords" content="contact, web developer, Ashraful Islam, email, phone" />
             </Head>
             <div className='min-h-screen bg-gray-900 flex flex-col items-center justify-center text-white p-6 md:p-10'>
-
+                <LiveChatButton/>
                 <div className='mb-6 flex justify-start w-full'>
                     <h1 className='text-3xl md:text-4xl font-bold mb-6 relative inline'>
                         Contact Me

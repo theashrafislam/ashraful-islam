@@ -4,6 +4,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb } from 'react-icons/si';
 import { BsGit } from 'react-icons/bs';
 import TypeWriter from '../Components/TypeWriter/TypeWriter';
+import LiveChatButton from '../Components/LiveChat/LiveChatButton';
 
 export const metadata = {
     title: 'About Ashraful Islam | Web Developer & MERN Stack Specialist',
@@ -13,6 +14,9 @@ export const metadata = {
 const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-6 md:px-10">
+            <div>
+            <LiveChatButton/>
+            </div>
             <h1 className='text-3xl md:text-4xl font-bold mb-6 relative inline-block'>
                 About Me
                 {/* Custom Underline */}

@@ -1,15 +1,16 @@
 "use client"
 import Image from "next/image";
 import DownloadButton from "../Button/downloadButton";
-import Typewriter from 'typewriter-effect';
 import TypeWriter from "../TypeWriter/TypeWriter";
+import LiveChatButton from "../LiveChat/LiveChatButton";
 
 const HomePage = () => {
-    // const handleDownload = () => {
-    //     console.log('Hello, I am woking')
-    // }
+
     return (
         <div className="bg-gray-900 text-white p-6 md:p-10 min-h-screen flex flex-col justify-center">
+
+            <LiveChatButton className="z-10"/>
+            
             <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-10">
                 {/* Text Section */}
                 <div className="flex flex-col gap-4 md:gap-6 justify-center items-start text-start md:text-left md:w-3/5">

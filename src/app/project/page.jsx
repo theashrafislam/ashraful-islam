@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import LiveChatButton from '../Components/LiveChat/LiveChatButton';
 
 export const metadata = {
     title: "Projects by Ashraful Islam | Web Developer",
@@ -44,6 +45,7 @@ const projects = [
 const ProjectsPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-6 md:px-10">
+            <LiveChatButton/>
             <h1 className="text-4xl font-bold text-center mb-8 relative inline-block">
                 Projects
                 <span className="absolute left-0 bottom-0 transform translate-y-2">
@@ -54,10 +56,10 @@ const ProjectsPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
+                    <div key={index} className="bg-white rounded-lg shadow-lg ">
                         <Image src={project.image} alt={project.title} className="w-full h-48 object-cover" width={500} height={300} />
                         <div className="p-6">
-                            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+                            <h2 className="text-2xl font-bold mb-2 text-black">{project.title}</h2>
                             <p className="text-gray-600 mb-4">{project.description}</p>
                             <h3 className="text-lg font-semibold mb-2 text-orange-500">Features:</h3>
                             <ul className="list-disc list-inside mb-4 text-gray-700">

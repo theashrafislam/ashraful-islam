@@ -1,46 +1,19 @@
-"use client"
-import Head from 'next/head';
-import toast from 'react-hot-toast';
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import LiveChatButton from '../Components/LiveChat/LiveChatButton';
+import ContactForm from '../Components/Form/Form';
 
+
+export const metadata = {
+    title: 'Contact Ashraful Islam | Get in Touch',
+    description: "Reach out to Ashraful Islam for any inquiries or collaboration opportunities. I'm here to assist you with your questions. Send me a message today!",
+};
 
 const ContactPage = () => {
 
-    const handleFormData = async (e) => {
-        e.preventDefault();
-        const { name, subject, email, messages } = e.target.elements;
-        const formData = {
-            name: name.value,
-            subject: subject.value,
-            email: email.value,
-            messages: messages.value
-        }
-        const response = await fetch('/api/sendEmail', {
-            method: "POST",
-            headers: {
-                'content-type': "application/json"
-            },
-            body: JSON.stringify(formData)
-        });
-        if (response.status === 200) {
-            e.target.reset();
-            toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.',);
-        }
-        else {
-            toast.error('⚠️ Oops! Something went wrong. Please try again.')
-        }
-    }
-
     return (
         <>
-            <Head>
-                <title>Contact Ashraful Islam | Get in Touch</title>
-                <meta name="description" content="Reach out to Ashraful Islam for any inquiries or collaboration opportunities. I'm here to assist you with your questions. Send me a message today!" />
-                <meta name="keywords" content="contact, web developer, Ashraful Islam, email, phone" />
-            </Head>
             <div className='min-h-screen bg-gray-900 flex flex-col items-center justify-center text-white p-6 md:p-10'>
-                <LiveChatButton/>
+                <LiveChatButton />
                 <div className='mb-6 flex justify-start w-full'>
                     <h1 className='text-3xl md:text-4xl font-bold mb-6 relative inline'>
                         Contact Me
@@ -97,55 +70,8 @@ const ContactPage = () => {
                     </div>
 
                     <div className='bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg max-w-4xl mx-auto'>
-                        <form onSubmit={handleFormData} className='grid grid-cols-1 gap-6'>
-                            {/* Name Field */}
-                            <div className=''>
-                                <input
-                                    type='text'
-                                    placeholder='Name'
-                                    required
-                                    name="name"
-                                    className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
-                                />
-                            </div>
-                            {/* Email Field */}
-                            <div className=''>
-                                <input
-                                    required
-                                    type='email'
-                                    placeholder='Email'
-                                    name="email"
-                                    className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
-                                />
-                            </div>
-                            {/* Subject Field */}
-                            <div className=''>
-                                <input
-                                    type='text'
-                                    required
-                                    placeholder='Subject'
-                                    name="subject"
-                                    className='w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
-                                />
-                            </div>
-                            {/* Message Field */}
-                            <div className=''>
-                                <textarea
-                                    required
-                                    placeholder='Messages'
-                                    name="messages"
-                                    className='w-full px-4 py-2 h-32 rounded-lg border border-gray-700 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-orange-500'
-                                />
-                            </div>
-                            {/* Submit Button */}
-                            <div className='text-start md:text-center'>
-                                <button
-                                    type='submit'
-                                    className='bg-orange-500 text-white text-lg px-6 py-3 rounded-lg hover:bg-orange-600 transition'>
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                        {/* form  */}
+                        <ContactForm />
                     </div>
                 </div>
             </div>

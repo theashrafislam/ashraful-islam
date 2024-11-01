@@ -25,6 +25,9 @@ export const metadata = {
     "Web Development Career"
   ],
   author: "Ashraful Islam",
+  icons: {
+    icon: "/images/favicon.png",
+  },
   openGraph: {
     title: "Ashraful Islam | Web Developer",
     description: "Explore the work and passion of Ashraful Islam, a dedicated web developer with expertise in modern web technologies like React, Next.js, and the MERN stack.",

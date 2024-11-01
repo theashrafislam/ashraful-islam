@@ -1,37 +1,47 @@
+"use client"
+import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 
-const Form = () => {
+const ContactForm = () => {
+    const [loading, setLoading] = useState(false);
 
     const handleFormData = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const { name, subject, email, messages } = e.target.elements;
         const formData = {
             name: name.value,
             subject: subject.value,
             email: email.value,
             messages: messages.value
-        }
-        const response = await fetch('/api/sendEmail', {
-            method: "POST",
-            headers: {
-                'content-type': "application/json"
-            },
-            body: JSON.stringify(formData)
-        });
-        if(response.status === 200){
-            e.target.reset();
-            toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.',);
-        }
-        else{
-            toast.error('⚠️ Oops! Something went wrong. Please try again.')
-        }
-    }
+        };
 
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: "POST",
+                headers: {
+                    'content-type': "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.status === 200) {
+                e.target.reset();
+                toast.success('🌟 Your message has been sent successfully! Thank you for reaching out to me.');
+            } else {
+                toast.error('⚠️ Oops! Something went wrong. Please try again.');
+            }
+        } catch (error) {
+            toast.error('⚠️ Network error. Please try again later.');
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <form onSubmit={handleFormData} className='grid grid-cols-1 gap-6'>
             {/* Name Field */}
-            <div className=''>
+            <div>
                 <input
                     type='text'
                     placeholder='Name'
@@ -41,7 +51,7 @@ const Form = () => {
                 />
             </div>
             {/* Email Field */}
-            <div className=''>
+            <div>
                 <input
                     required
                     type='email'
@@ -51,7 +61,7 @@ const Form = () => {
                 />
             </div>
             {/* Subject Field */}
-            <div className=''>
+            <div>
                 <input
                     type='text'
                     required
@@ -61,7 +71,7 @@ const Form = () => {
                 />
             </div>
             {/* Message Field */}
-            <div className=''>
+            <div>
                 <textarea
                     required
                     placeholder='Messages'
@@ -70,15 +80,27 @@ const Form = () => {
                 />
             </div>
             {/* Submit Button */}
-            <div className='text-center'>
+            <div className='text-start md:text-center'>
                 <button
                     type='submit'
-                    className='bg-orange-500 text-white text-lg px-6 py-3 rounded-lg hover:bg-orange-600 transition'>
-                    Send Message
+                    disabled={loading}
+                    className={`bg-orange-500 text-white text-lg px-6 py-3 rounded-lg transition ${loading ? 'cursor-not-allowed bg-orange-400' : 'hover:bg-orange-600'}`}
+                >
+                    {loading ? (
+                        <span className="flex items-center justify-center">
+                            <svg className="animate-spin h-5 w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                            </svg>
+                            Sending...
+                        </span>
+                    ) : (
+                        'Send Message'
+                    )}
                 </button>
             </div>
         </form>
     );
 };
 
-export default Form;
+export default ContactForm;

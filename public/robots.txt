@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ashraful-islam.vercel.app
+
+# Sitemaps
+Sitemap: https://ashraful-islam.vercel.app/sitemap.xml

@@ -2,7 +2,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Toaster } from "react-hot-toast";
-import Head from "next/head";
+
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -25,6 +25,9 @@ export const metadata = {
     "Electrical Engineering",
     "Web Development Career"
   ],
+  verification: {
+    google: "DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc",
+  },
   author: "Ashraful Islam",
   icons: {
     icon: "/images/favicon.png",
@@ -42,9 +45,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" />
-      </Head>
+      </head>
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">
           <Navbar />

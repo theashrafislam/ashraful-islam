@@ -18,7 +18,7 @@ const HomePage = () => {
                         Hey, I&apos;m <br /><span className="text-orange-500">Ashraful Islam</span>
                     </h1>
                     <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
-                        <strong>I&apos;m a</strong> <strong className="text-orange-500"><span className="inline-block"><TypeWriter /></span></strong>
+                        <strong>I&apos;m a</strong> <strong className="text-orange-500"><TypeWriter /></strong>
                     </h2>
                     {/* <h2 className="text-xl md:text-3xl font-semibold">
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>

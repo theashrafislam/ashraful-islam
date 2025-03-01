@@ -2,7 +2,6 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Toaster } from "react-hot-toast";
-import Head from "next/head";
 
 
 const lato = Lato({
@@ -46,11 +45,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         {/* Google site verification */}
         <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" />
         <meta name="next-size-adjust" content="true" />
-      </Head>
+      </head>
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">
           <Navbar />

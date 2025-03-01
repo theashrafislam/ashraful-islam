@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ashraful-islam.vercel.app
+Host: https://theashrafislam.com
 
 # Sitemaps
-Sitemap: https://ashraful-islam.vercel.app/sitemap.xml
+Sitemap: https://theashrafislam.com/sitemap.xml

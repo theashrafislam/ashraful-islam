@@ -25,9 +25,6 @@ export const metadata = {
     "Electrical Engineering",
     "Web Development Career"
   ],
-  verification: {
-    google: "DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc",
-  },
   author: "Ashraful Islam",
   icons: {
     icon: "/images/favicon.png",
@@ -47,7 +44,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google site verification */}
-        <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" />
+        {/* <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" /> */}
+        {/* verification: {
+    google: "DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc",
+  }, */}
         <meta name="next-size-adjust" content="auto" />
       </head>
       <body className={`${lato.variable} antialiased flex`}>

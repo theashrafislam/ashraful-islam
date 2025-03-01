@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 const TypeWriter = ({ development }) => {
     return (
-        <>
+        <span className="typewriter-wrapper">
             <Typewriter
                 options={{
                     strings: [
@@ -14,9 +14,10 @@ const TypeWriter = ({ development }) => {
                     ],
                     autoStart: true,
                     loop: true,
+                    wrapperClassName: "inline-block",
                 }}
             />
-        </>
+        </span>
     );
 };
 

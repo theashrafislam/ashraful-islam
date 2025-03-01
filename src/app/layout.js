@@ -45,9 +45,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" />
-      </head>
+      </head> */}
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">
           <Navbar />

@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    experimental: {
-        disableOptimizedLoading: true,
-    }
-};
+const nextConfig = {};
 
 export default nextConfig;

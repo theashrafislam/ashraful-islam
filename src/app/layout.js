@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google site verification */}
         <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" />
-        <meta name="next-size-adjust" content="true" />
+        <meta name="next-size-adjust" content="auto" />
       </head>
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">

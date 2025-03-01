@@ -9,21 +9,23 @@ const HomePage = () => {
     return (
         <div className="bg-gray-900 text-white p-6 md:p-10 min-h-screen flex flex-col justify-center">
 
-            <LiveChatButton className="z-10"/>
-            
+            <LiveChatButton className="z-10" />
+
             <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-10">
                 {/* Text Section */}
                 <div className="flex flex-col gap-4 md:gap-6 justify-center items-start text-start md:text-left md:w-3/5">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Hey, I&apos;m <br /><span className="text-orange-500">Ashraful Islam</span>
                     </h1>
-                    <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center"><strong>I&apos;m a</strong> <strong className="text-orange-500" ><TypeWriter /></strong></h2>
+                    <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
+                        <strong>I&apos;m a</strong> <strong className="text-orange-500"><span className="inline-block"><TypeWriter /></span></strong>
+                    </h2>
                     {/* <h2 className="text-xl md:text-3xl font-semibold">
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>
                     </h2> */}
                     <p className="text-base md:text-xl leading-relaxed text-gray-300">
                         <strong>Ashraful Islam</strong> is a passionate <strong>web developer</strong> dedicated to harnessing the power of persistence and creativity. Despite facing challenges as a student in school, I never let that deter my ambitions. I proudly completed my diploma in <strong>Electrical Engineering</strong>, but my true passion lies in <strong>web development</strong>, which I now embrace as my career.
-                        <br className="mb-4"/>
+                        <br className="mb-4" />
                         <strong>Coding</strong> brings me immense joy and fulfillment. It allows me to express my creativity while solving complex problems and building dynamic applications. As a <strong>MERN stack developer</strong>, I specialize in modern technologies such as <strong>React</strong> and <strong>Next.js</strong>. Through my projects, I strive to create <strong>user-friendly experiences</strong> that make a significant impact in the tech community.
                     </p>
                     <p className="text-base md:text-xl leading-relaxed text-gray-300"></p>

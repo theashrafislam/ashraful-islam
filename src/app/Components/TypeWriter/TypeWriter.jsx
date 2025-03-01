@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 const TypeWriter = ({ development }) => {
     return (
-        <span>
+        <>
             <Typewriter
                 options={{
                     strings: [
@@ -16,7 +16,7 @@ const TypeWriter = ({ development }) => {
                     loop: true,
                 }}
             />
-        </span>
+        </>
     );
 };
 

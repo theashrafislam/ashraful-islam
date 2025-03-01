@@ -18,9 +18,9 @@ const HomePage = () => {
                     </h1>
                     <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
                         <strong>I&apos;m a</strong>
-                        <span className="text-orange-500 inline-block">
+                        <div className="text-orange-500 font-bold">
                             <TypeWriter />
-                        </span>
+                        </div>
                     </h2>
                     {/* <h2 className="text-xl md:text-3xl font-semibold">
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>

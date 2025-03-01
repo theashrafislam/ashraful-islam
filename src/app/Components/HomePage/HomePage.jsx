@@ -16,12 +16,12 @@ const HomePage = () => {
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Hey, I&apos;m <br /><span className="text-orange-500">Ashraful Islam</span>
                     </h1>
-                    <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
+                    <div className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
                         <strong>I&apos;m a</strong>
-                        <span className="text-orange-500 font-bold">
+                        <div className="text-orange-500 font-bold">
                             <TypeWriter />
-                        </span>
-                    </h2>
+                        </div>
+                    </div>
                     {/* <h2 className="text-xl md:text-3xl font-semibold">
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>
                     </h2> */}

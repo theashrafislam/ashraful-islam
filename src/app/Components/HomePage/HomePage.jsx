@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image";
 import DownloadButton from "../Button/downloadButton";
 import TypeWriter from "../TypeWriter/TypeWriter";
@@ -17,12 +16,12 @@ const HomePage = () => {
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Hey, I&apos;m <br /><span className="text-orange-500">Ashraful Islam</span>
                     </h1>
-                    <div className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
+                    <h2 className="text-xl md:text-3xl font-semibold flex gap-2 items-center">
                         <strong>I&apos;m a</strong>
-                        <div className="text-orange-500 inline-block">
+                        <span className="text-orange-500 inline-block">
                             <TypeWriter />
-                        </div>
-                    </div>
+                        </span>
+                    </h2>
                     {/* <h2 className="text-xl md:text-3xl font-semibold">
                         I&apos;m a <span className="text-orange-500"><TypeWriter /></span>
                     </h2> */}

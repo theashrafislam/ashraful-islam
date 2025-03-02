@@ -43,12 +43,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google site verification */}
-        {/* <meta name="google-site-verification" content="DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc" /> */}
-        {/* verification: {
-    google: "DLR-xBxWJVW11lsFulF1talH4pHtCDfIhLdjeh878uc",
-  }, */}
-        <meta name="next-size-adjust" content="auto" />
+        {/* <meta name="next-size-adjust" content="auto" /> */}
+        <link rel="canonical" href="https://theashrafislam.com" />
       </head>
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">

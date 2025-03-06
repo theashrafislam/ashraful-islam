@@ -43,8 +43,31 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <meta name="next-size-adjust" content="auto" /> */}
+        {/* SEO & Meta Tags */}
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="robots"
+          content="index, follow"
+        />
+        <meta name="author" content="Ashraful Islam" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta
+          property="og:description"
+          content={metadata.openGraph.description}
+        />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:image" content={metadata.openGraph.image} />
+
+        {/* Canonical URL */}
         <link rel="canonical" href="https://theashrafislam.com" />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/png" href={metadata.icons.icon} />
       </head>
       <body className={`${lato.variable} antialiased flex`}>
         <aside className="lg:w-2/12">

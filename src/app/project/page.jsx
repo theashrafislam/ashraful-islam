@@ -45,7 +45,7 @@ const projects = [
 const ProjectsPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-6 md:px-10">
-            <LiveChatButton/>
+            <LiveChatButton />
             <h1 className="text-4xl font-bold text-center mb-8 relative inline-block">
                 Projects
                 <span className="absolute left-0 bottom-0 transform translate-y-2">
@@ -56,30 +56,45 @@ const ProjectsPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg ">
-                        <Image src={project.image} alt={project.title} className="w-full h-48 object-cover" width={500} height={300} />
-                        <div className="p-6">
-                            <h2 className="text-2xl font-bold mb-2 text-black">{project.title}</h2>
-                            <p className="text-gray-600 mb-4">{project.description}</p>
-                            <h3 className="text-lg font-semibold mb-2 text-orange-500">Features:</h3>
-                            <ul className="list-disc list-inside mb-4 text-gray-700">
-                                {project.features.map((feature, featureIndex) => (
-                                    <li key={featureIndex}>{feature}</li>
-                                ))}
-                            </ul>
-                            <h3 className="text-lg font-semibold mb-2 text-orange-500">Technologies:</h3>
-                            <p className="text-gray-700">{project.technologies}</p>
-                            <h3 className="text-lg font-semibold mb-2">Links:</h3>
-                            <div className="flex flex-col space-y-2">
-                                <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-orange-500 text-white py-2 px-4 rounded">Live Demo</button>
-                                </a>
-                                <a href={project.clientRepo} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-orange-500 text-white py-2 px-4 rounded">Client Side Repo</button>
-                                </a>
-                                <a href={project.serverRepo} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-orange-500 text-white py-2 px-4 rounded">Server Side Repo</button>
-                                </a>
+                    <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-48 object-cover"
+                            width={500}
+                            height={300}
+                        />
+                        <div className="p-6 flex flex-col flex-grow">
+                            <div>
+                                <h2 className="text-2xl font-bold mb-2 text-black">{project.title}</h2>
+                                <p className="text-gray-600 mb-4">{project.description}</p>
+                                <h3 className="text-lg font-semibold mb-2 text-orange-500">Features:</h3>
+                                <ul className="list-disc list-inside mb-4 text-gray-700">
+                                    {project.features.map((feature, featureIndex) => (
+                                        <li key={featureIndex}>{feature}</li>
+                                    ))}
+                                </ul>
+                                <h3 className="text-lg font-semibold mb-2 text-orange-500">Technologies:</h3>
+                                <p className="text-gray-700">{project.technologies}</p>
+                                <h3 className="text-lg font-semibold mb-2 text-black">Links:</h3>
+                            </div>
+                            <div className="flex-grow"></div> {/* This makes sure content grows and uses space */}
+                            <div className="flex flex-col items-start space-y-2">
+                                <button className="bg-orange-500 text-white py-2 px-4 rounded">
+                                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                                        Live Demo
+                                    </a>
+                                </button>
+                                <button className="bg-orange-500 text-white py-2 px-4 rounded">
+                                    <a href={project.clientRepo} target="_blank" rel="noopener noreferrer">
+                                        Client Side Repo
+                                    </a>
+                                </button>
+                                <button className="bg-orange-500 text-white py-2 px-4 rounded inline-block">
+                                    <a href={project.serverRepo} target="_blank" rel="noopener noreferrer">
+                                        Server Side Repo
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>

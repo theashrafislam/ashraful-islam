@@ -80,21 +80,30 @@ const ProjectsPage = () => {
                             </div>
                             <div className="flex-grow"></div> {/* This makes sure content grows and uses space */}
                             <div className="flex flex-col items-start space-y-2">
-                                <button className="bg-orange-500 text-white py-2 px-4 rounded">
-                                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-                                        Live Demo
-                                    </a>
-                                </button>
-                                <button className="bg-orange-500 text-white py-2 px-4 rounded">
-                                    <a href={project.clientRepo} target="_blank" rel="noopener noreferrer">
-                                        Client Side Repo
-                                    </a>
-                                </button>
-                                <button className="bg-orange-500 text-white py-2 px-4 rounded inline-block">
-                                    <a href={project.serverRepo} target="_blank" rel="noopener noreferrer">
-                                        Server Side Repo
-                                    </a>
-                                </button>
+                                <a
+                                    href={project.liveDemo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-orange-500 text-white py-2 px-4 rounded inline text-center"
+                                >
+                                    Live Demo
+                                </a>
+                                <a
+                                    href={project.clientRepo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-orange-500 text-white py-2 px-4 rounded inline-block text-center"
+                                >
+                                    Client Side Repo
+                                </a>
+                                <a
+                                    href={project.serverRepo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-orange-500 text-white py-2 px-4 rounded inline-block text-center"
+                                >
+                                    Server Side Repo
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -42,7 +42,7 @@ const AboutPage = () => {
 
                 {/* Right Section: Specialization and Skills */}
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6"><span>I&apos;m Specialized in</span> <span className="text-orange-500" ><TypeWriter development={'development'} /></span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6"><span>I&apos;m Specialized in</span> <div className="text-orange-500" ><TypeWriter development={'development'} /></div></h2>
 
                     {/* Front-End Section */}
                     <div className="mb-8 bg-gray-800 p-4 rounded-md">
@@ -130,7 +130,7 @@ const AboutPage = () => {
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 </p>
                 {/* about me */}
-                <span className="text-gray-700 text-base md:text-lg leading-relaxed"><h3 className="inline"><strong>Ashraful Islam</strong> is a passionate <strong>web developer</strong> with a strong foundation in <strong>Electrical Engineering</strong></h3>, which has greatly influenced his approach to problem-solving and logical thinking. His academic background has given him the analytical skills needed to tackle challenges in the world of <strong>web development</strong>, where he found his true passion.</span>
+                <div className="text-gray-700 text-base md:text-lg leading-relaxed"><h3 className="inline"><strong>Ashraful Islam</strong> is a passionate <strong>web developer</strong> with a strong foundation in <strong>Electrical Engineering</strong></h3>, which has greatly influenced his approach to problem-solving and logical thinking. His academic background has given him the analytical skills needed to tackle challenges in the world of <strong>web development</strong>, where he found his true passion.</div>
 
                 <p className="py-3 text-gray-700 text-base md:text-lg leading-relaxed">Overcoming various challenges as a student, Ashraful realized that traditional academics did not define his potential. Instead, he discovered a genuine interest in <strong>coding</strong>, where creativity and technical skills converge to bring ideas to life. He specializes in the <strong>MERN stack</strong> and has a deep understanding of technologies like <strong>React</strong> and <strong>Next.js</strong>, which enable him to build modern, responsive, and dynamic <strong>web applications</strong>.</p>
 
@@ -157,7 +157,7 @@ const AboutPage = () => {
                 </h1>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                 </p>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed"><h3 className="inline">Ashraful Islam is passionate about <strong>web development</strong>, enjoying <strong>coding</strong> as both a profession and a hobby.</h3> He loves exploring new <strong>programming languages</strong>, <strong>frameworks</strong>, and <strong>tools</strong>, always eager to expand his skills.</p>
+                <div className="text-gray-700 text-base md:text-lg leading-relaxed"><h3 className="inline">Ashraful Islam is passionate about <strong>web development</strong>, enjoying <strong>coding</strong> as both a profession and a hobby.</h3> He loves exploring new <strong>programming languages</strong>, <strong>frameworks</strong>, and <strong>tools</strong>, always eager to expand his skills.</div>
 
                 <p className="py-3 text-gray-700 text-base md:text-lg leading-relaxed">Outside of coding, Ashraful enjoys <strong>reading tech blogs</strong>, staying updated on <strong>technology trends</strong>, and engaging in <strong>online communities</strong> for knowledge sharing. His enthusiasm for continuous learning drives him to keep up with the latest in the fast-evolving <strong>software development</strong> world.</p>
 

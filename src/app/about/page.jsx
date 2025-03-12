@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb } from 'react-icons/si';
+import { SiTailwindcss, SiNextdotjs, SiFirebase, SiMongodb, SiVercel } from 'react-icons/si';
+import { TbBrandRedux } from "react-icons/tb";
 import { BsGit } from 'react-icons/bs';
 import TypeWriter from '../Components/TypeWriter/TypeWriter';
 import LiveChatButton from '../Components/LiveChat/LiveChatButton';
@@ -15,7 +16,7 @@ const AboutPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-6 md:px-10">
             <div>
-            <LiveChatButton/>
+                <LiveChatButton />
             </div>
             <h1 className='text-3xl md:text-4xl font-bold mb-6 relative inline-block'>
                 About Me
@@ -33,7 +34,7 @@ const AboutPage = () => {
                         src="/images/ashraful-islam.jpg"
                         alt="Ashraful Islam"
                         className="rounded-lg object-cover grayscale"
-                        width={600} // Optimized for mobile
+                        width={600}
                         height={600}
                     />
                     <h1 className="text-4xl md:text-5xl font-bold mt-4">Ashraful Islam</h1>
@@ -54,6 +55,7 @@ const AboutPage = () => {
                                 { icon: <FaJs className="text-yellow-500" />, skill: "JavaScript" },
                                 { icon: <FaReact className="text-blue-600" />, skill: "React" },
                                 { icon: <SiNextdotjs className="text-black" />, skill: "Next.js" },
+                                { icon: <TbBrandRedux className="text-[#764abc]" />, skill: "Redux" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>
@@ -70,6 +72,7 @@ const AboutPage = () => {
                             {[
                                 { icon: <FaNodeJs className="text-green-600" />, skill: "Node.js" },
                                 { icon: <SiFirebase className="text-yellow-600" />, skill: "Express.js" },
+                                { icon: <Image src="/images/jwt.png" height={25} width={25} alt={"ashraful-islam"} />, skill: "JWT Authentication" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>
@@ -101,7 +104,8 @@ const AboutPage = () => {
                             {[
                                 { icon: <BsGit className="text-red-500" />, skill: "Git" },
                                 { icon: <SiFirebase className="text-yellow-600" />, skill: "Firebase" },
-                                { icon: <Image src="/images/nextauth.png" height={20} width={20} alt={"ashraful-islam"}/>, skill: "NextAuth.js" },
+                                { icon: <Image src="/images/nextauth.png" height={20} width={20} alt={"ashraful-islam"} />, skill: "NextAuth.js" },
+                                { icon: <SiVercel className="text-black" />, skill: "Vercel" },
                             ].map(({ icon, skill }) => (
                                 <div key={skill} className="flex items-center gap-2 bg-gray-700 p-2 rounded-md">
                                     <span className="text-xl">{icon}</span>
